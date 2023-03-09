@@ -67,13 +67,14 @@ type EstimateAmountReq struct {
 }
 
 type EstimateAmountRes struct {
-	Err               Err     `json:"err"`
-	EqValueTokenAmt   string  `json:"eq_value_token_amt"`
-	BridgeRate        float64 `json:"bridge_rate"`
-	PercFee           string  `json:"perc_fee"`
-	BaseFee           string  `json:"base_fee"`
-	SlippageTolerance int     `json:"slippage_tolerance"`
-	MaxSlippage       int     `json:"max_slippage"`
+	Err                 Err     `json:"err"`
+	EqValueTokenAmt     string  `json:"eq_value_token_amt"`
+	BridgeRate          float64 `json:"bridge_rate"`
+	PercFee             string  `json:"perc_fee"`
+	BaseFee             string  `json:"base_fee"`
+	SlippageTolerance   int     `json:"slippage_tolerance"`
+	MaxSlippage         int     `json:"max_slippage"`
+	EstimatedReceiveAmt string  `json:"estimated_receive_amt"`
 }
 
 type Err struct {
